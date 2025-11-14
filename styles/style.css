@@ -1,1 +1,372 @@
-/* место для вашего кода */
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
+  gap: 25px;
+  width: 100%;
+  height: 180px;
+  margin-top: 180px;
+  padding: 0 50px;
+  background-color: rgb(255 255 255);
+}
+
+.about{
+    width: 1052px;
+    display:flex;
+    top:2073px;
+    left:24px;
+    height: 595px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  width: 100%;
+  height: 293px;
+  padding: 0 50px;
+  background-color: rgb(255 255 255);
+}
+
+.header-menu {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.header-links-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  list-style: circle;
+}
+
+.header-links-list-item {
+  margin-left: 14px;
+}
+
+.header-links-list-item-no-bullit {
+  list-style: none;
+}
+
+.header-link {
+  color: rgb(0 0 0);
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.header-link-active {
+  text-decoration: none;
+}
+
+.header-logo {
+  width: 129px;
+}
+
+.header-logo-png {
+  display: block;
+}
+
+.address {
+  max-width: 240px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.3;
+}
+
+.header-address {
+  justify-self: end;
+}
+
+.underline-thin {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.main {
+  position: relative;
+}
+
+.cover {
+  position: relative;
+  width: 100%;
+  height: 757px;
+  background-image: url(../images/lotus.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-color: rgba(0 0 0 / 0.6);
+}
+
+.cover-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 385px;
+  margin-top: 165px;
+  padding: 0 50px;
+  color: rgb(255 255 255);
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 100px;
+  text-transform: uppercase;
+}
+
+.aligned-text {
+  justify-content: flex-start;
+}
+
+.aligned-text-center {
+  justify-content: center;
+}
+
+.aligned-text-right {
+  justify-content: flex-end;
+}
+
+.letter-spacing-extended {
+  display: flex;
+  letter-spacing: 0.3em; /* 30% от размера шрифта */
+  text-transform: uppercase;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.cover-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 106px;
+  padding: 0 50px;
+}
+
+.cover-description-text {
+  color: rgb(255 255 255);
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  text-transform: uppercase;
+  word-spacing: 18.5px;
+}
+
+.bet-button {
+  max-width: 256px;
+  height: 51px;
+  border: 1px solid rgb(255 255 255);
+  padding: 12px 32px 11px 31px;
+  color: rgb(255 255 255);
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;  /* В макете 500, стоит ли добавлять новый @font-face */
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: transparent;
+  white-space: nowrap;
+}
+
+
+
+.lots-head {
+  margin-bottom: 27px;
+  margin-left: 40px;
+  color: rgb(0 0 0);
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.lots-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  list-style: none;
+}
+
+.frame {
+  position: relative; /* Относительное позиционирование */
+  width: 334px;
+  min-height: 596px;
+}
+
+.card-link {
+  display: block; /* Чтобы height сработал чистто блочный тип */
+  height: 100%;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 48px 40px;
+}
+
+
+.card-film,
+.card-book,
+.card-picture {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.card-film {
+  background-image: url(../images/frame_1.jpg);
+}
+.card-book {
+  background-image: url(../images/frame_2.png);
+}
+.card-picture {
+  background-image: url(../images/frame_3.jpg);
+}
+
+
+.frame-title,
+.frame-text {
+  position: relative;
+  z-index: 2;
+  margin: 0; /* Убрать дефолтные отступы */
+  color: rgb(255 255 255);
+  font-family: 'Raleway', sans-serif;
+}
+
+
+.frame-title {
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-transform: uppercase;
+}
+
+
+.frame-text {
+  font-weight: 500px;
+  font-size: 20px;
+}
+
+.look-more {
+  display: inline-block; /* Чтобы margin сработал курсив с блочным-строчным типом */
+  margin: 30px 0 0 40px;
+  color: rgb(0 0 0);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500px;
+  font-size: 20px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.about {
+  max-width: 1052px;
+  height: 595px;
+  margin: 0 24px;
+  background-color: rgb(255 255 255);
+}
+
+.about-column {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  gap: 25px;
+  height: 100%;
+}
+
+.about-logo {
+  top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  margin: 34px auto 0;
+  border-radius: 50%;
+  background-color: rgb(0 0 0);
+}
+
+.about-logo-column {
+  width: 148px;
+  height: 114px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.about-title-content {
+  margin-bottom: 76px;
+  color: rgb(0 0 0);
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.about-text-content {
+  margin-top: 24px;
+  color: rgb(0 0 0);
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.footer-address {
+  justify-self: start;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav-list {
+  text-align: center;
+  list-style: none;
+}
+
+.footer-nav-list-item {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500px;
+  font-size: 18px;
+}
+
+.footer-nav-link {
+  color: rgb(0 0 0);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.social {
+  display: flex;
+  justify-self: end;
+  justify-content: space-between;
+  width: 240px;
+  height: 48px;
+  list-style: none;
+}
+
+.yoytube,
+.vk,
+.pintr {
+  width:48px;
+  height: 48px;
+}
